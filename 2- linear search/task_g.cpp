@@ -5,13 +5,13 @@
 
 using namespace std;
 
-void kth_rearrange(vector<int>& arr, int left, int right, int k) {
+void kth_rearrange(vector<long>& arr, int left, int right, int k) {
     while (left < right) {
-        int x = arr[(left + right) / 2];
+        long x = arr[(left + right) / 2];
         int eqXFirst = left; //первое число, равное x
         int grtXFirst = left; //первое число, больше чем x
         for (int i = left; i <= right; i++) {
-            int now = arr[i];
+            long now = arr[i];
             if (now == x) {
                 arr[i] = arr[grtXFirst];
                 arr[grtXFirst] = now;
@@ -35,8 +35,8 @@ void task_g() {
     ifstream input("input.txt");
     ofstream output("output.txt");
 
-    int n;
-    vector<int> arr;
+    long n;
+    vector<long> arr;
     while (input >> n) arr.push_back(n);
 
     int size = arr.size();

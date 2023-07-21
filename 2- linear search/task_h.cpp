@@ -5,42 +5,17 @@
 
 using namespace std;
 
-void kth_rearrange(vector<int>& arr, int left, int right, int k) {
-    while (left < right) {
-        int x = arr[(left + right) / 2];
-        int eqXFirst = left; //первое число, равное x
-        int grtXFirst = left; //первое число, больше чем x
-        for (int i = left; i <= right; i++) {
-            int now = arr[i];
-            if (now == x) {
-                arr[i] = arr[grtXFirst];
-                arr[grtXFirst] = now;
-                grtXFirst++;
-            } else if (now < x) {
-                arr[i] = arr[grtXFirst];
-                arr[grtXFirst] = arr[eqXFirst];
-                arr[eqXFirst] = now;
-                grtXFirst++;
-                eqXFirst++;
-            }
-        }
-        if (k < eqXFirst) right = eqXFirst - 1;
-        else if (k >= grtXFirst) left = grtXFirst;
-        else return;
-    }
-}
-
 //Наибольшее произведение трёх чисел
 void task_h() {
     ifstream input("input.txt");
     ofstream output("output.txt");
 
-    int n;
-    vector<int> arr;
+    long n;
+    vector<long> arr;
     while (input >> n) arr.push_back(n);
 
     int size = arr.size();
-    kth_rearrange(arr, 0, size-1, size-1);
+    kth_rearrange(arr, 0, size-1, size-1); //используется из task_g.cpp
     kth_rearrange(arr, 0, size-2, size-2);
     kth_rearrange(arr, 0, size-4, 2);
 
