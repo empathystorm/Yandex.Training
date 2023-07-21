@@ -28,8 +28,8 @@ bool check_starts_with_digit(string& s, bool stDigit) {
     return false;
 }
 
-string find_most_common_identifier(map<string, vector<long>>& identifiers) {
-    vector<long> maxFirstPos = {0, 0};
+string find_most_common_identifier(map<string, vector<int>>& identifiers) {
+    vector<int> maxFirstPos = {0, 0};
     string firstWord;
     for (auto& word: identifiers) {
         if (word.second[0] > maxFirstPos[0] || //кол-во больше максимального
@@ -60,8 +60,8 @@ void task_j() {
     }
 
     //ввод кода
-    map<string, vector<long>> identifiers; //1 - слово, 2 - кол-во появлений, 3 - номер слова
-    long wordNumber = 0;
+    map<string, vector<int>> identifiers; //1 - слово, 2 - кол-во появлений, 3 - номер слова
+    int wordNumber = 0;
     string line;
     while (getline(input, line)) {
         only_letter_digit_underscore(line);
@@ -72,7 +72,7 @@ void task_j() {
             if (!keyWords.count(word) && check_starts_with_digit(word, stDigit)) {
                 //является идентификатором
                 if (!identifiers.count(word))
-                    identifiers.insert(make_pair(word, vector<long>{0, wordNumber}));
+                    identifiers.insert(make_pair(word, vector<int>{0, wordNumber}));
                 identifiers[word][0]++;
                 wordNumber++;
             }
