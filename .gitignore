@@ -1,5 +1,5 @@
-[1-8]*/cmake-build-debug/
-[1-8]*/CMakeLists.txt
-[1-8]*/.idea/
+/**/cmake-build-debug/
+/**/CMakeLists.txt
+/**/.idea/
 /python/
 template.md
