@@ -11,5 +11,3 @@
 | H | [Расшифровка письменности Майя](https://contest.yandex.ru/contest/27665/problems/H/) | [task_h.cpp](task_h.cpp) | OK |
 | I | [Контрольная по ударениям](https://contest.yandex.ru/contest/27665/problems/I/) | [task_i.cpp](task_i.cpp) | OK |
 | J | [Дополнительная проверка на списывание](https://contest.yandex.ru/contest/27665/problems/J/) | [task_j.cpp](task_j.cpp) | OK |
-
-\* *ошибка на 47 тесте. Пробовал использовать long, проблема не в этом. [Разбор на Python](https://www.youtube.com/live/J2C6rDqe8mQ?feature=share&t=3616)*

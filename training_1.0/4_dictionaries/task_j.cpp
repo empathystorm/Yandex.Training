@@ -23,13 +23,19 @@ void only_letter_digit_underscore(string& s) {
     }
 }
 
-bool check_starts_with_digit(string& s, bool stDigit) {
-    if (stDigit || !isdigit(s[0])) return true;
-    return false;
+bool is_correct_identifier(string& s, bool stDigit) {
+    bool isDigits = true;
+    for (char c: s) {
+        if (!isdigit(c)) {
+            isDigits = false;
+            break;
+        }
+    }
+    return !isDigits && (stDigit || !isdigit(s[0]));
 }
 
-string find_most_common_identifier(map<string, vector<int>>& identifiers) {
-    vector<int> maxFirstPos = {0, 0};
+string find_most_common_identifier(map<string, vector<unsigned>>& identifiers) {
+    vector<unsigned> maxFirstPos = {0, 0};
     string firstWord;
     for (auto& word: identifiers) {
         if (word.second[0] > maxFirstPos[0] || //кол-во больше максимального
@@ -60,8 +66,8 @@ void task_j() {
     }
 
     //ввод кода
-    map<string, vector<int>> identifiers; //1 - слово, 2 - кол-во появлений, 3 - номер слова
-    int wordNumber = 0;
+    map<string, vector<unsigned>> identifiers; //1 - слово, 2 - кол-во появлений, 3 - номер слова
+    unsigned wordNumber = 0;
     string line;
     while (getline(input, line)) {
         only_letter_digit_underscore(line);
@@ -69,10 +75,10 @@ void task_j() {
         while (sline >> word) {
             //можеть быть идентификатором и ключевым словом
             if (!caseSens) word = str_to_lower(word);
-            if (!keyWords.count(word) && check_starts_with_digit(word, stDigit)) {
+            if (!keyWords.count(word) && is_correct_identifier(word, stDigit)) {
                 //является идентификатором
                 if (!identifiers.count(word))
-                    identifiers.insert(make_pair(word, vector<int>{0, wordNumber}));
+                    identifiers.insert(make_pair(word, vector<unsigned>{0, wordNumber}));
                 identifiers[word][0]++;
                 wordNumber++;
             }
