@@ -13,13 +13,6 @@ void add_any(vector<vector<int> >& table, int key) {
     table[key%10].push_back(key);
 }
 
-istringstream get_line(istream& input) {
-    string s;
-    getline(input, s);
-    istringstream is(s);
-    return is;
-}
-
 void task_b() {
     ifstream input("input.txt");
     ofstream output("output.txt");
@@ -31,9 +24,9 @@ void task_b() {
     while (is1 >> a) add_any(table, a);
 
     vector<int> matches;
-    istringstream is2 = get_line(input);
+    istringstream is2 = get_line(input); //get_line() из func.cpp
     while (is2 >> a) {
-        if (find(table, a)) matches.push_back(a); //find from task A (see func.h file)
+        if (find(table, a)) matches.push_back(a); //find() из func.cpp
     }
     sort(matches.begin(), matches.end());
     for (int i : matches) output << i << ' ';

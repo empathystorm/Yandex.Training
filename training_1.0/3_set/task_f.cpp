@@ -15,7 +15,7 @@ void task_f() {
     ofstream output("output.txt");
 
     map<string, int> genomes;
-    istringstream is = get_line(input); //get_line from task B (see func.h file)
+    istringstream is = get_line(input); //get_line() из func.cpp
     char s0, s;
     is >> s0;
     while (is >> s) {

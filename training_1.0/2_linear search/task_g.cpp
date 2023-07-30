@@ -5,31 +5,6 @@
 
 using namespace std;
 
-void kth_rearrange(vector<long>& arr, int left, int right, int k) {
-    while (left < right) {
-        long x = arr[(left + right) / 2];
-        int eqXFirst = left; //первое число, равное x
-        int grtXFirst = left; //первое число, больше чем x
-        for (int i = left; i <= right; i++) {
-            long now = arr[i];
-            if (now == x) {
-                arr[i] = arr[grtXFirst];
-                arr[grtXFirst] = now;
-                grtXFirst++;
-            } else if (now < x) {
-                arr[i] = arr[grtXFirst];
-                arr[grtXFirst] = arr[eqXFirst];
-                arr[eqXFirst] = now;
-                grtXFirst++;
-                eqXFirst++;
-            }
-        }
-        if (k < eqXFirst) right = eqXFirst - 1;
-        else if (k >= grtXFirst) left = grtXFirst;
-        else return;
-    }
-}
-
 //Наибольшее произведение двух чисел
 void task_g() {
     ifstream input("input.txt");
@@ -40,7 +15,7 @@ void task_g() {
     while (input >> n) arr.push_back(n);
 
     int size = arr.size();
-    kth_rearrange(arr, 0, size-1, size-2);
+    kth_rearrange(arr, 0, size-1, size-2); //используется из func.cpp
     kth_rearrange(arr, 0, size-3, 1);
 
     if (arr[size-1] * arr[size-2] >= arr[0] * arr[1])

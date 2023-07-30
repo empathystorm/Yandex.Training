@@ -15,7 +15,7 @@ void task_h() {
     while (input >> n) arr.push_back(n);
 
     int size = arr.size();
-    kth_rearrange(arr, 0, size-1, size-1); //используется из task_g.cpp
+    kth_rearrange(arr, 0, size-1, size-1); //используется из func.cpp
     kth_rearrange(arr, 0, size-2, size-2);
     kth_rearrange(arr, 0, size-4, 2);
 

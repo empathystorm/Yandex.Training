@@ -7,13 +7,6 @@
 
 using namespace std;
 
-string str_to_lower(string s) {
-    for (char& c: s) {
-        c = (char)tolower(c);
-    }
-    return s;
-}
-
 int count_stresses(string& s) {
     int stresses = 0;
     for (char& c: s) {
@@ -34,7 +27,7 @@ void task_i() {
     for (int i = 0; i < dictSize; i++) {
         string dictWord;
         input >> dictWord;
-        string lowerWord = str_to_lower(dictWord);
+        string lowerWord = str_to_lower(dictWord); //str_to_lower() из func.cpp
         if (!dict.count(lowerWord))
             dict.insert(make_pair(lowerWord, set<string>()));
         dict[lowerWord].insert(dictWord);

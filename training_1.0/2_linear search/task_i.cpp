@@ -7,7 +7,7 @@ using namespace std;
 
 void put_numbers_near_bomb(vector<vector<char> >& field, int n, int m, int sizeN, int sizeM) {
     int deltas[][2] = {{-1, -1}, {-1, 0}, {-1, 1},
-                       {0, -1},                       {0, 1},
+                       {0, -1},            {0, 1},
                        {1, -1}, {1, 0},   {1, 1}};
     for (auto& d : deltas) {
         int pn = d[0] + n;

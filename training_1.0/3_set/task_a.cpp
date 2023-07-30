@@ -6,16 +6,9 @@
 
 using namespace std;
 
-//можно использовать set
-bool find(vector<vector<int> >& table, int key) {
-    for (int i : table[key%10]) {
-        if (i == key) return true;
-    }
-    return false;
-}
-
+//написана буквальная реализация хэш-таблицы, можно использовать set
 void add(vector<vector<int> >& table, int key) {
-    if (!find(table, key)) {
+    if (!find(table, key)) { //find() из func.cpp
         table[key%10].push_back(key);
     }
 }

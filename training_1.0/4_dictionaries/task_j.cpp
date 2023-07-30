@@ -61,7 +61,7 @@ void task_j() {
     for (int i = 0; i < keyCount; i++) {
         string keyWord;
         input >> keyWord;
-        if (!caseSens) keyWord = str_to_lower(keyWord); // функция из task_i.cpp
+        if (!caseSens) keyWord = str_to_lower(keyWord); // str_to_lower() из func.cpp
         keyWords.insert(keyWord);
     }
 

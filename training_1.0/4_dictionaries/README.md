@@ -9,5 +9,5 @@
 | F | [Продажи](https://contest.yandex.ru/contest/27665/problems/F/) | [task_f.cpp](task_f.cpp) | OK |
 | G | [Банковские счета](https://contest.yandex.ru/contest/27665/problems/G/) | [task_g.cpp](task_g.cpp) | OK |
 | H | [Расшифровка письменности Майя](https://contest.yandex.ru/contest/27665/problems/H/) | [task_h.cpp](task_h.cpp) | OK |
-| I | [Контрольная по ударениям](https://contest.yandex.ru/contest/27665/problems/I/) | [task_i.cpp](task_i.cpp) | OK |
-| J | [Дополнительная проверка на списывание](https://contest.yandex.ru/contest/27665/problems/J/) | [task_j.cpp](task_j.cpp) | OK |
+| I | [Контрольная по ударениям](https://contest.yandex.ru/contest/27665/problems/I/) | [task_i.cpp](task_i.cpp) [func.cpp](func.cpp) | OK |
+| J | [Дополнительная проверка на списывание](https://contest.yandex.ru/contest/27665/problems/J/) | [task_j.cpp](task_j.cpp) [func.cpp](func.cpp) | OK |
