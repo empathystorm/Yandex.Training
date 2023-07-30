@@ -7,7 +7,7 @@
 | 2 | [Линейный поиск](https://youtu.be/SKwB41FrGgU) | [10/10](/training_1.0/2_linear%20search/) |
 | 3 | [Множества](https://youtu.be/PUpmV2ieIHA) | [10/10](/training_1.0/3_set/) |
 | 4 | [Словари и сортировка подсчётом](https://youtu.be/Nb5mW1yWVSs) | [10/10](/training_1.0/4_dictionaries/) |
-| 5 | [Префиксные суммы и два указателя](https://youtu.be/de28y8Dcvkg) | 0/10 |
+| 5 | [Префиксные суммы и два указателя](https://youtu.be/de28y8Dcvkg) | [10/10](/training_1.0/5_prefix%20sum) |
 | 6 | [Бинарный поиск](https://youtu.be/YENpZexHfuk) | 0/10 |
 | 7 | [Сортировка событий](https://youtu.be/hGixDBO-p6Q) | 0/10 |
 | 8 | [Деревья](https://youtu.be/lEJzqHgyels) | 0/10 |
