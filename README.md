@@ -2,7 +2,7 @@
 Мои решения задач курса ["Тренировки по алгоритмам 1.0"](https://yandex.ru/yaintern/algorithm-training_1) от Яндекса на языке **C++** с комментариями
 
 | № | Лекция | Решения 1.0 |
-| :-: | - | :-: | :-: |
+| :-: | - | :-: |
 | 1 | [Сложность, тестирование, особые случаи](https://youtu.be/QLhqYNsPIVo) | [10/10](/training_1.0/1_complexity/) |
 | 2 | [Линейный поиск](https://youtu.be/SKwB41FrGgU) | [10/10](/training_1.0/2_linear%20search/) |
 | 3 | [Множества](https://youtu.be/PUpmV2ieIHA) | [10/10](/training_1.0/3_set/) |
