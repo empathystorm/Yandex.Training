@@ -1,14 +1,15 @@
-# Тренировки по алгоритмам 1.0
-Мои решения задач курса ["Тренировки по алгоритмам 1.0"](https://yandex.ru/yaintern/algorithm-training_1) от Яндекса на языке **C++** с комментариями
+# Тренировки по алгоритмам
+Мои решения задач курса ["Тренировки по алгоритмам"](https://yandex.ru/yaintern/algorithm-training_1) от Яндекса на языках **C++** и **Python**
 
+## Часть [1.0](https://yandex.ru/yaintern/algorithm-training_1) (2021)
 | № | Лекция | Решения 1.0 |
 | :-: | - | :-: |
-| 1 | [Сложность, тестирование, особые случаи](https://youtu.be/QLhqYNsPIVo) | [10/10](/training_1.0/1_complexity/) |
-| 2 | [Линейный поиск](https://youtu.be/SKwB41FrGgU) | [10/10](/training_1.0/2_linear%20search/) |
-| 3 | [Множества](https://youtu.be/PUpmV2ieIHA) | [10/10](/training_1.0/3_set/) |
-| 4 | [Словари и сортировка подсчётом](https://youtu.be/Nb5mW1yWVSs) | [10/10](/training_1.0/4_dictionaries/) |
-| 5 | [Префиксные суммы и два указателя](https://youtu.be/de28y8Dcvkg) | [10/10](/training_1.0/5_prefix%20sum) |
-| 6 | [Бинарный поиск](https://youtu.be/YENpZexHfuk) | 0/10 |
+| 1 | [Сложность, тестирование, особые случаи](https://youtu.be/QLhqYNsPIVo) | [10/10](/training_1.0/1_complexity/) C++ |
+| 2 | [Линейный поиск](https://youtu.be/SKwB41FrGgU) | [10/10](/training_1.0/2_linear%20search/) C++ |
+| 3 | [Множества](https://youtu.be/PUpmV2ieIHA) | [10/10](/training_1.0/3_set/) C++ |
+| 4 | [Словари и сортировка подсчётом](https://youtu.be/Nb5mW1yWVSs) | [10/10](/training_1.0/4_dictionaries/) C++ |
+| 5 | [Префиксные суммы и два указателя](https://youtu.be/de28y8Dcvkg) | [10/10](/training_1.0/5_prefix%20sum) C++ |
+| 6 | [Бинарный поиск](https://youtu.be/YENpZexHfuk) | [11/11](6_binary%20search) Python |
 | 7 | [Сортировка событий](https://youtu.be/hGixDBO-p6Q) | 0/10 |
 | 8 | [Деревья](https://youtu.be/lEJzqHgyels) | 0/10 |
 
