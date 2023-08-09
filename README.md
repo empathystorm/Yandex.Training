@@ -9,7 +9,7 @@
 | 3 | [Множества](https://youtu.be/PUpmV2ieIHA) | [10/10](/training_1.0/3_set/) C++ |
 | 4 | [Словари и сортировка подсчётом](https://youtu.be/Nb5mW1yWVSs) | [10/10](/training_1.0/4_dictionaries/) C++ |
 | 5 | [Префиксные суммы и два указателя](https://youtu.be/de28y8Dcvkg) | [10/10](/training_1.0/5_prefix%20sum) C++ |
-| 6 | [Бинарный поиск](https://youtu.be/YENpZexHfuk) | [11/11](6_binary%20search) Python |
+| 6 | [Бинарный поиск](https://youtu.be/YENpZexHfuk) | [11/11](/training_1.0/6_binary%20search) Python |
 | 7 | [Сортировка событий](https://youtu.be/hGixDBO-p6Q) | 0/10 |
 | 8 | [Деревья](https://youtu.be/lEJzqHgyels) | 0/10 |
 
