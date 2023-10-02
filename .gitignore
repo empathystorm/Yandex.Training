@@ -1,4 +1,14 @@
+#CLion
 /**/cmake-build-debug/
-/**/*.txt
 /**/.idea/
+#PyCharm
+/**/__pycache__/
+#txt
+/**/CMakeLists.txt
+/**/input.txt
+/**/output.txt
+#temp file for readmes
 template.md
+#VS Code
+/**/bin/
+/**/.vscode/
