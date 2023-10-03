@@ -1,13 +1,9 @@
-void pretty_print(const string& prefix, const Tree* root, bool isLeft, ostream& out) {
+void pretty_print( const Tree* root, ostream& out, const string& prefix = "", bool isLeft = false) {
     if (root != nullptr) {
         out << prefix;
         out << (isLeft ? "├──" : "└──" );
         out << root->key << endl;
-        print(prefix + (isLeft ? "│   " : "    "), root->left, true, out);
-        print(prefix + (isLeft ? "│   " : "    "), root->right, false, out);
+        pretty_print(root->left, out, prefix + (isLeft ? "│   " : "    "), true);
+        pretty_print(root->right, out, prefix + (isLeft ? "│   " : "    "), false);
     }
-}
-
-void pretty_print(const Tree* root, ostream& out) {
-    print("", root, false, out);
 }
