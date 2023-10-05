@@ -11,7 +11,7 @@
 | 5 | [Префиксные суммы и два указателя](https://youtu.be/de28y8Dcvkg) | [10/10](/training_1.0/5_prefix%20sum) C++ |
 | 6 | [Бинарный поиск](https://youtu.be/YENpZexHfuk) | [11/11](/training_1.0/6_binary%20search) Python |
 | 7 | [Сортировка событий](https://youtu.be/hGixDBO-p6Q) | [2/10](/training_1.0/7_event%20sorting) Python |
-| 8 | [Деревья](https://youtu.be/lEJzqHgyels) | [3/10](/training_1.0/8_trees) C++ |
+| 8 | [Деревья](https://youtu.be/lEJzqHgyels) | [10/10](/training_1.0/8_trees) C++ |
 
 ## Другие контесты
 | Контест | Решения |
